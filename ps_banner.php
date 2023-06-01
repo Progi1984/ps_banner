@@ -76,10 +76,20 @@ class Ps_Banner extends Module implements WidgetInterface
             return true;
         }
 
+        if (version_compare(_PS_VERSION_, '8.0.0', '>=')) {
+            $blockBannerImgValue = Configuration::getConfigInMultipleLangs('BLOCKBANNER_IMG');
+            $blockBannerLinkValue = Configuration::getConfigInMultipleLangs('BLOCKBANNER_LINK');
+            $blockBannerDescValue = Configuration::getConfigInMultipleLangs('BLOCKBANNER_DESC');
+        } else {
+            $blockBannerImgValue = Configuration::getInt('BLOCKBANNER_IMG');
+            $blockBannerLinkValue = Configuration::getInt('BLOCKBANNER_LINK');
+            $blockBannerDescValue = Configuration::getInt('BLOCKBANNER_DESC');
+        }
+
         // Data migration
-        Configuration::updateValue('BANNER_IMG', Configuration::getInt('BLOCKBANNER_IMG'));
-        Configuration::updateValue('BANNER_LINK', Configuration::getInt('BLOCKBANNER_LINK'));
-        Configuration::updateValue('BANNER_DESC', Configuration::getInt('BLOCKBANNER_DESC'));
+        Configuration::updateValue('BANNER_IMG', $blockBannerImgValue);
+        Configuration::updateValue('BANNER_LINK', $blockBannerLinkValue);
+        Configuration::updateValue('BANNER_DESC', $blockBannerDescValue);
 
         $oldModule = Module::getInstanceByName(self::PS_16_EQUIVALENT_MODULE);
         if ($oldModule) {
