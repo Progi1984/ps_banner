@@ -14,6 +14,12 @@ Add a banner to the homepage of your store to highlight your sales and new produ
 
 PrestaShop: `1.7.1.0` or later
 
+## How to test
+
+Link to specs : https://docs.prestashop-project.org/functional-documentation/functional-documentation/ux-ui/back-office/improve/modules/banner-ps_banner
+
+Add a banner image, link and description (alt text) and make sure it is well displayed in the Homepage
+
 ## Reporting issues
 
 You can report issues with this module in the main PrestaShop repository. [Click here to report an issue][report-issue]. 
