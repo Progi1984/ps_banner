@@ -52,7 +52,7 @@ class Ps_Banner extends Module implements WidgetInterface
         $this->displayName = $this->trans('Banner', [], 'Modules.Banner.Admin');
         $this->description = $this->trans('Add a banner to the homepage of your store to highlight your sales and new products in a visual and friendly way.', [], 'Modules.Banner.Admin');
 
-        $this->ps_versions_compliancy = ['min' => '1.7.1.0', 'max' => _PS_VERSION_];
+        $this->ps_versions_compliancy = ['min' => '8.1.0', 'max' => _PS_VERSION_];
 
         $this->templateFile = 'module:ps_banner/ps_banner.tpl';
     }
