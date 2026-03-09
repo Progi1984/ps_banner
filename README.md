@@ -1,7 +1,6 @@
 # Banner
 
 [![PHP tests](https://github.com/PrestaShop/ps_banner/actions/workflows/php.yml/badge.svg)](https://github.com/PrestaShop/ps_banner/actions/workflows/php.yml)
-[![E2E tests](https://github.com/PrestaShop/ps_banner/actions/workflows/e2eTests.yml/badge.svg)](https://github.com/PrestaShop/ps_banner/actions/workflows/e2eTests.yml)
 [![Latest Stable Version](https://poser.pugx.org/PrestaShop/ps_banner/v)](//packagist.org/packages/PrestaShop/ps_banner)
 [![Total Downloads](https://poser.pugx.org/PrestaShop/ps_banner/downloads)](//packagist.org/packages/PrestaShop/ps_banner)
 [![GitHub license](https://img.shields.io/github/license/PrestaShop/ps_banner)](https://github.com/PrestaShop/ps_banner/LICENSE.md)
